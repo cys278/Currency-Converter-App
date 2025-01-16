@@ -1,6 +1,6 @@
 const populate = async (value, currency) => {
     let myStr = "";
-    url = "https://api.currencyapi.com/v3/latest?apikey=your_new_api_key&base_currency=" + currency;
+    url = "https://api.currencyapi.com/v3/latest?apikey=your_new_api_key&base_currency=" + currency; //Replace with your API key
     let response = await fetch(url);
     let rJson = await response.json();
     document.querySelector(".output").style.display="block";
